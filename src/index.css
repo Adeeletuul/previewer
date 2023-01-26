@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+}
+
+#header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #355263;
+  position:sticky;
+  height: 100vh;
+}
+
+#title{
+  color: #FDD24E;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 25px;
+  letter-spacing: 3px;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(50vw - 20px);
+  background-color: #EFEFEF;
+  height: 100vh;
+}
+
+.container>.label{
+  position: absolute;
+  top: 20px;
+  color: #355263;
+  background-color: #FDD24E;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  left: 10%;
+  width: 80%;
+}
+
+.container>#editor,
+.container>#preview{
+  height: calc(100vh - 50px);
+  resize: none;
+  border: none;
+  margin: 100px 10px 10px 10px;
+  padding: 30px;
+}
+
+.container>#editor{
+ background-color: #FFFFFF;
+}
+
+.container>#preview{
+  background-color: #f6f8fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container:last-child{
+  border-left: 1px solid #d5d5d3 ;
+}
+
+#preview code,
+#preview kbd,
+#preview pre {
+  font-family: monospace, monospace;
+}
+
+#preview a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+#preview a:hover {
+  text-decoration: underline;
+}
+
+#preview table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#preview ul,
+#preview ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#preview ol ol,
+#preview ul ol {
+  list-style-type: lower-roman;
+}
+
+#preview ul ul ol,
+#preview ul ol ol,
+#preview ol ul ol,
+#preview ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+#preview dd {
+  margin-left: 0;
+}
+
+#preview p,
+#preview blockquote,
+#preview ul,
+#preview ol,
+#preview dl,
+#preview table,
+#preview pre {
+  margin-bottom: 16px;
+}
+
+#preview blockquote {
+  padding: 0 16px;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+#preview h1,
+#preview h2{
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+#preview ul,
+#preview ol {
+  padding-left: 2em;
+}
+
+#preview ul ul,
+#preview ul ol,
+#preview ol ol,
+#preview ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#preview li>p {
+  margin-top: 16px;
+}
+
+#preview li+li {
+  margin-top: 0.25em;
+}
+
+#preview table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+#preview table th {
+  font-weight: 600;
+}
+
+#preview table th,
+#preview table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+#preview table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+#preview img {
+  max-width: 100%;
+  box-sizing: content-box;
+}
+
+#preview code {
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+}
+
+
